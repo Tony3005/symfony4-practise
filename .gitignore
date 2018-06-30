@@ -1,0 +1,12 @@
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+### Docker environment
+/docker/.data/
+/docker/docker-compose.yml
+/docker/nginx.conf
