@@ -17,11 +17,13 @@ class PractiseController extends AbstractController
         $session->set('key', 'value');
         $url = $urlGenerator->generate('practise');
 
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/PractiseController.php',
-            'url' => $url,
-            'keu' => $session->get('key'),
-        ]);
+        // return $this->json([
+        //     'message' => 'Welcome to your new controller!',
+        //     'path' => 'src/Controller/PractiseController.php',
+        //     'url' => $url,
+        //     'keu' => $session->get('key'),
+        // ]);
+
+        return $this->render('practise/practise.html.twig');
     }
 }
